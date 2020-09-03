@@ -3,7 +3,7 @@ import { themes } from '@storybook/theming';
 
 addons.setConfig({
     theme: {
-        ...themes.light,
+        ...themes.dark,
         brandTitle: 'React Use Algos',
     },
 });
