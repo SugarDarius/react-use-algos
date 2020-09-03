@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "target": "ES5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "jsx": "react",
+        "declaration": true,
+        "rootDir": "./src",
+        "sourceMap": true,
+        "strict": true,
+        "esModuleInterop": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUnusedLocals": true,
+        "noImplicitReturns": true,
+        "noImplicitAny": true,
+        "outDir": "./lib",
+        "lib": [
+            "DOM",
+            "ES2018",
+        ],
+        "importHelpers": true,
+    },
+    "exclude": [
+        "node_modules",
+        "lib",
+        "tests",
+        "public",
+        "build",
+    ]
+}
