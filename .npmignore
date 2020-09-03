@@ -1,6 +1,7 @@
 node_modules/
 public/
 build/
+coverage/
 scripts/
 src/
 .github/
@@ -17,6 +18,8 @@ src/
 !*.d.ts
 
 tsconfig.json
+
+jest.config.js
 
 .lintstagedrc
 .commitlintrc.json
