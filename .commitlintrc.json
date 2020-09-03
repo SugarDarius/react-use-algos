@@ -19,7 +19,7 @@
             "always",
             [
                 "project",
-                "packages",
+                "config",
                 "arch",
                 "build",
                 "chore",
