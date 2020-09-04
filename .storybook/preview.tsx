@@ -1,7 +1,7 @@
 export const parameters = {
     options: {
         storySort: {
-            order: ['Greetings'],
+            order: ['Greetings', 'DataTypes', 'Algos'],
         }
     }
 };
