@@ -17,7 +17,7 @@ export function Commands() {
             reset,
             has,
         }
-    ] = useQueue([
+    ] = useSet([
         'firstCommand',
         'secondCommand',
     ]);
@@ -61,4 +61,4 @@ export function Commands() {
 }
 ```
 
-> Note: this hooks is based on [react-use](https://github.com/streamich/react-use/blob/master/docs/useSet.md) useQueue hook.
+> Note: this hooks is based on [react-use](https://github.com/streamich/react-use/blob/master/docs/useSet.md) useSet hook.

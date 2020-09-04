@@ -96,7 +96,7 @@ describe('useSet test suite', () => {
 		expect(set.size).toEqual(0);
 	});
 
-	it('memoizes its methods', () => {
+	it('memoizes his methods', () => {
 		const { result } = setUp(['user_0', 'user_1']);
 		const [, { add, remove, reset, toggle }] = result.current;
 
