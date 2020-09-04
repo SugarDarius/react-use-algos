@@ -1,7 +1,7 @@
 {
     "name": "@sugardarius/react-use-algos",
     "version": "0.1.0",
-    "description": "A simple library of React hooks to use some algorithms",
+    "description": "A simple library of React hooks to use some algorithms, formulas and datatypes.",
     "readme": "<rootDir>/README.md",
     "homepage": "https://github.com/SugarDarius/react-use-algos#readme",
     "bugs": {
