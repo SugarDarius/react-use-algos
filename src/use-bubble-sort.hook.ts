@@ -20,6 +20,7 @@ export function useBubbleSort<T>(input: T[], greaterCompareFn: UseBubbleSortGrea
 				for (let i = 0; i < length; i++) {
 					if (greaterCompareFn(input[i], input[i + 1])) {
 						const temp = input[i];
+
 						input[i] = input[i + 1];
 						input[i + 1] = temp;
 
