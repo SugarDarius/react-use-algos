@@ -11,25 +11,30 @@ export function useBubbleSort<T>(input: T[], greaterCompareFn: UseBubbleSortGrea
 	const [output, setOutput] = React.useState<T[]>([]);
 
 	const sort = React.useCallback(
-		(input: T[]): void => {
-			const length = input.length;
-			let swapped: boolean;
+		async (input: T[]): Promise<void> => {
+			const sortedInput = await new Promise<T[]>((resolve) => {
+				const inputToSort: T[] = [...input];
+				const length = inputToSort.length;
+				let swapped: boolean;
 
-			do {
-				swapped = false;
-				for (let i = 0; i < length; i++) {
-					if (greaterCompareFn(input[i], input[i + 1])) {
-						const temp = input[i];
+				do {
+					swapped = false;
+					for (let i = 0; i < length; i++) {
+						if (greaterCompareFn(inputToSort[i], inputToSort[i + 1])) {
+							const temp = inputToSort[i];
 
-						input[i] = input[i + 1];
-						input[i + 1] = temp;
+							inputToSort[i] = inputToSort[i + 1];
+							inputToSort[i + 1] = temp;
 
-						swapped = true;
+							swapped = true;
+						}
 					}
-				}
-			} while (swapped);
+				} while (swapped);
 
-			setOutput(input);
+				resolve(inputToSort);
+			});
+
+			setOutput(sortedInput);
 		},
 		[input]
 	);

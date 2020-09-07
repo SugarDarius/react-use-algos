@@ -1,4 +1,4 @@
-import { act, renderHook } from '@testing-library/react-hooks';
+import { renderHook } from '@testing-library/react-hooks';
 import { useQuickSort, UseQuickSortCompareFns } from './use-quick-sort.hook';
 
 const setUp = <T>(input: T[], compareFns: UseQuickSortCompareFns<T>) => {
@@ -24,13 +24,13 @@ describe('useQuickSort test suite', () => {
 		expect(output).toEqual([]);
 	});
 
-	it('sort the input', () => {
-		const { result } = setUp([54, 54, 2, 36, 42, 8], compareFns);
+	it('sort the input', async () => {
+		const { result, waitForNextUpdate } = setUp([54, 54, 2, 36, 42, 8], compareFns);
 		const { sort } = result.current;
 
-		act(() => {
-			sort();
-		});
+		sort();
+
+		await waitForNextUpdate();
 
 		expect(result.current.output).toEqual([2, 8, 36, 42, 54, 54]);
 	});

@@ -17,38 +17,43 @@ export type UseQuickSortReturnType<T> = {
 export function useQuickSort<T>(input: T[], compareFns: UseQuickSortCompareFns<T>): UseQuickSortReturnType<T> {
 	const [output, setOutput] = React.useState<T[]>([]);
 
-	const quickSortFn = (input: T[]): T[] => {
-		if (input.length > 1) {
-			let left: T[] = [],
-				right: T[] = [];
-			const pivot: T | undefined = input.shift();
-
-			let center: T[] = [pivot!];
-
-			while (input.length > 0) {
-				const item: T | undefined = input.shift();
-
-				if (compareFns.equalCompareFn(item!, pivot!)) {
-					center = [...center, item!];
-				} else if (compareFns.lessCompareFn(item!, pivot!)) {
-					left = [...left, item!];
-				} else {
-					right = [...right, item!];
-				}
-			}
-
-			const leftSorted = quickSortFn(left);
-			const rightSorted = quickSortFn(right);
-
-			return [...leftSorted, ...center, ...rightSorted];
-		}
-
-		return input;
-	};
-
 	const sort = React.useCallback(
-		(input: T[]): void => {
-			setOutput(quickSortFn(input));
+		async (input: T[]): Promise<void> => {
+			const sortedInput = await new Promise<T[]>((resolve): void => {
+				const inputToSort: T[] = [...input];
+				const fn = (input: T[]): T[] => {
+					if (input.length > 1) {
+						let left: T[] = [],
+							right: T[] = [];
+						const pivot: T | undefined = input.shift();
+
+						let center: T[] = [pivot!];
+
+						while (input.length > 0) {
+							const item: T | undefined = input.shift();
+
+							if (compareFns.equalCompareFn(item!, pivot!)) {
+								center = [...center, item!];
+							} else if (compareFns.lessCompareFn(item!, pivot!)) {
+								left = [...left, item!];
+							} else {
+								right = [...right, item!];
+							}
+						}
+
+						const leftSorted = fn(left);
+						const rightSorted = fn(right);
+
+						return [...leftSorted, ...center, ...rightSorted];
+					}
+
+					return input;
+				};
+
+				resolve(fn(inputToSort));
+			});
+
+			setOutput(sortedInput);
 		},
 		[input]
 	);

@@ -1,4 +1,4 @@
-import { act, renderHook } from '@testing-library/react-hooks';
+import { renderHook } from '@testing-library/react-hooks';
 import { useSelectionSort, UseSelectionSortGreaterCompareFn } from './use-selection-sort.hook';
 
 const setUp = <T>(input: T[], greaterCompareFn: UseSelectionSortGreaterCompareFn<T>) => {
@@ -19,13 +19,13 @@ describe('useSelectionSort test suite', () => {
 		expect(output).toEqual([]);
 	});
 
-	it('sort the input', () => {
-		const { result } = setUp([54, 2, 36, 42, 8], greaterCompareFn);
+	it('sort the input', async () => {
+		const { result, waitForNextUpdate } = setUp([54, 2, 36, 42, 8], greaterCompareFn);
 		const { sort } = result.current;
 
-		act(() => {
-			sort();
-		});
+		sort();
+
+		await waitForNextUpdate();
 
 		expect(result.current.output).toEqual([2, 8, 36, 42, 54]);
 	});

@@ -11,27 +11,32 @@ export function useSelectionSort<T>(input: T[], greaterCompareFn: UseSelectionSo
 	const [output, setOutput] = React.useState<T[]>([]);
 
 	const sort = React.useCallback(
-		(input: T[]): void => {
-			const length = input.length;
+		async (input: T[]): Promise<void> => {
+			const sortedInput = await new Promise<T[]>((resolve) => {
+				const inputToSort: T[] = [...input];
+				const length = input.length;
 
-			for (let i = 0; i < length; i++) {
-				let min: number = i;
+				for (let i = 0; i < length; i++) {
+					let min: number = i;
 
-				for (let j: number = i + 1; j < length; j++) {
-					if (greaterCompareFn(input[min], input[j])) {
-						min = j;
+					for (let j: number = i + 1; j < length; j++) {
+						if (greaterCompareFn(inputToSort[min], inputToSort[j])) {
+							min = j;
+						}
+					}
+
+					if (min !== i) {
+						const temp = inputToSort[i];
+
+						inputToSort[i] = inputToSort[min];
+						inputToSort[min] = temp;
 					}
 				}
 
-				if (min !== i) {
-					const temp = input[i];
+				resolve(inputToSort);
+			});
 
-					input[i] = input[min];
-					input[min] = temp;
-				}
-			}
-
-			setOutput(input);
+			setOutput(sortedInput);
 		},
 		[input]
 	);
