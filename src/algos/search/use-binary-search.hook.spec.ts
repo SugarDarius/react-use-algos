@@ -18,14 +18,14 @@ const compareFns: UseBinarySearchCompareFns<number> = {
 
 describe('useBinarySearch test suite', () => {
 	it('takes initial input', () => {
-		const { result } = setUp([54, 2, 36, 42, 8], 36, compareFns);
+		const { result } = setUp([2, 8, 36, 42, 54], 36, compareFns);
 		const { index } = result.current;
 
 		expect(index).toEqual(-1);
 	});
 
-	it('search a seeked item', async () => {
-		const { result, waitForNextUpdate } = setUp([54, 2, 36, 42, 8], 36, compareFns);
+	it('search a seeked item - middle', async () => {
+		const { result, waitForNextUpdate } = setUp([2, 8, 36, 42, 54], 36, compareFns);
 		const { search } = result.current;
 
 		search();
@@ -33,5 +33,27 @@ describe('useBinarySearch test suite', () => {
 		await waitForNextUpdate();
 
 		expect(result.current.index).toEqual(2);
+	});
+
+	it('search a seeked item - end', async () => {
+		const { result, waitForNextUpdate } = setUp([2, 8, 36, 42, 54], 54, compareFns);
+		const { search } = result.current;
+
+		search();
+
+		await waitForNextUpdate();
+
+		expect(result.current.index).toEqual(4);
+	});
+
+	it('search a seeked item - start', async () => {
+		const { result, waitForNextUpdate } = setUp([2, 8, 36, 42, 54], 8, compareFns);
+		const { search } = result.current;
+
+		search();
+
+		await waitForNextUpdate();
+
+		expect(result.current.index).toEqual(1);
 	});
 });

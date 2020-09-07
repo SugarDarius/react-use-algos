@@ -34,7 +34,7 @@ export function useBinarySearch<T>(input: T[], seekedItem: T, compareFns: UseBin
 					if (compareFns.lessCompareFn(input[midIndex], seekedItem)) {
 						startIndex = midIndex + 1;
 					} else {
-						endIndex = midIndex + 1;
+						endIndex = midIndex - 1;
 					}
 				}
 
