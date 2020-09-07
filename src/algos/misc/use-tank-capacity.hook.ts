@@ -6,34 +6,38 @@ export type UseTankCapacityReturnType = {
 };
 
 export function useTankCapacity(input: number[] = []): UseTankCapacityReturnType {
-	const [capacity, setCapactiy] = React.useState<number>(0);
+	const [capacity, setCapactiy] = React.useState<number>(-1);
 
 	const compute = React.useCallback(
-		(input: number[]): void => {
-			const stack: number[] = [];
+		async (input: number[]): Promise<void> => {
+			const capacity = await new Promise<number>((resolve): void => {
+				const stack: number[] = [];
 
-			let capacity = 0;
-			let current = 0;
+				let cpty = 0;
+				let current = 0;
 
-			if (input.length > 0) {
-				while (current < input.length) {
-					while (stack.length > 0 && input[current] > input[stack[stack.length - 1]]) {
-						const top = stack[stack.length - 1];
-						stack.pop();
+				if (input.length > 0) {
+					while (current < input.length) {
+						while (stack.length > 0 && input[current] > input[stack[stack.length - 1]]) {
+							const top = stack[stack.length - 1];
+							stack.pop();
 
-						if (stack.length === 0) {
-							break;
+							if (stack.length === 0) {
+								break;
+							}
+
+							const distance = current - stack[stack.length - 1] - 1;
+							const boundHeight = Math.min(input[current], input[stack[stack.length - 1]]) - input[top];
+
+							cpty = cpty + distance * boundHeight;
 						}
 
-						const distance = current - stack[stack.length - 1] - 1;
-						const boundHeight = Math.min(input[current], input[stack[stack.length - 1]]) - input[top];
-
-						capacity = capacity + distance * boundHeight;
+						stack.push(current++);
 					}
-
-					stack.push(current++);
 				}
-			}
+
+				resolve(cpty);
+			});
 
 			setCapactiy(capacity);
 		},
