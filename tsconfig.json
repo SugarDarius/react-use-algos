@@ -25,7 +25,7 @@
         "lib",
         "tests",
         "public",
-        "build",
+        "storybook-build",
         "coverage",
         "docs",
     ]

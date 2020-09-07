@@ -1,6 +1,6 @@
 node_modules/
 lib/
-build/
+storybook-build/
 coverage/
 
 .DS_Store
