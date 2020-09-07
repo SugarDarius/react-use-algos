@@ -15,7 +15,7 @@ export type UseQuickSortReturnType<T> = {
 
 // @unstable
 export function useQuickSort<T>(input: T[], compareFns: UseQuickSortCompareFns<T>): UseQuickSortReturnType<T> {
-	const [output, setOutput] = React.useState<T[]>(input);
+	const [output, setOutput] = React.useState<T[]>([]);
 
 	const quickSortFn = (input: T[]): T[] => {
 		if (input.length > 1) {

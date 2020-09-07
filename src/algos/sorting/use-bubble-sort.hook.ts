@@ -8,7 +8,7 @@ export type UseBubbleSortReturnType<T> = {
 };
 
 export function useBubbleSort<T>(input: T[], greaterCompareFn: UseBubbleSortGreaterCompareFn<T>): UseBubbleSortReturnType<T> {
-	const [output, setOutput] = React.useState<T[]>(input);
+	const [output, setOutput] = React.useState<T[]>([]);
 
 	const sort = React.useCallback(
 		(input: T[]): void => {

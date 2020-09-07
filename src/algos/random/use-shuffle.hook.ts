@@ -2,11 +2,11 @@ import * as React from 'react';
 
 export type UseShuffleReturnType<T> = {
 	shuffle: () => void;
-	list: T[];
+	output: T[];
 };
 
 export function useShuffle<T>(input: T[] = []): UseShuffleReturnType<T> {
-	const [output, setOutput] = React.useState<T[]>(input);
+	const [output, setOutput] = React.useState<T[]>([]);
 
 	const shuffle = React.useCallback(
 		(list: T[]): void => {
@@ -35,6 +35,6 @@ export function useShuffle<T>(input: T[] = []): UseShuffleReturnType<T> {
 		shuffle: () => {
 			shuffle(input);
 		},
-		list: output
+		output
 	};
 }

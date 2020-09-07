@@ -8,7 +8,7 @@ export type UseSelectionSortReturnType<T> = {
 };
 
 export function useSelectionSort<T>(input: T[], greaterCompareFn: UseSelectionSortGreaterCompareFn<T>): UseSelectionSortReturnType<T> {
-	const [output, setOutput] = React.useState<T[]>(input);
+	const [output, setOutput] = React.useState<T[]>([]);
 
 	const sort = React.useCallback(
 		(input: T[]): void => {

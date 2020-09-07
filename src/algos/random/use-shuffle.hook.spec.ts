@@ -10,9 +10,9 @@ const setUp = <T>(input?: T[]) => {
 describe('useShuffle test suite', () => {
 	it('takes initial input', () => {
 		const { result } = setUp([0, 1, 2, 3, 4]);
-		const { list } = result.current;
+		const { output } = result.current;
 
-		expect(list).toEqual([0, 1, 2, 3, 4]);
+		expect(output).toEqual([]);
 	});
 
 	it('does not shuffle when input is empty', () => {
@@ -23,7 +23,7 @@ describe('useShuffle test suite', () => {
 			shuffle();
 		});
 
-		expect(result.current.list).toEqual([]);
+		expect(result.current.output).toEqual([]);
 	});
 
 	it('shuffles the input', () => {
@@ -34,7 +34,7 @@ describe('useShuffle test suite', () => {
 			shuffle();
 		});
 
-		expect(result.current.list).not.toEqual([0, 1, 2, 3, 4]);
+		expect(result.current.output).not.toEqual([0, 1, 2, 3, 4]);
 	});
 
 	it('uses and empty input as default value for items', () => {
@@ -45,6 +45,6 @@ describe('useShuffle test suite', () => {
 			shuffle();
 		});
 
-		expect(result.current.list).toEqual([]);
+		expect(result.current.output).toEqual([]);
 	});
 });

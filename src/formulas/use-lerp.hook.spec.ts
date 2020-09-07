@@ -1,4 +1,4 @@
-import { renderHook } from '@testing-library/react-hooks';
+import { act, renderHook } from '@testing-library/react-hooks';
 import { useLerp } from './use-lerp.hook';
 
 const setUp = (v0: number, v1: number, t: number) => {
@@ -8,9 +8,21 @@ const setUp = (v0: number, v1: number, t: number) => {
 };
 
 describe('useLerp test suite', () => {
-	it('computes linear interpolation', () => {
+	it('takes initial input', () => {
 		const { result } = setUp(10, 20, 6);
+		const { value } = result.current;
 
-		expect(result.current).toEqual(70);
+		expect(value).toEqual(0);
+	});
+
+	it('computes a linear interpolation', () => {
+		const { result } = setUp(10, 20, 6);
+		const { compute } = result.current;
+
+		act(() => {
+			compute();
+		});
+
+		expect(result.current.value).toEqual(70);
 	});
 });

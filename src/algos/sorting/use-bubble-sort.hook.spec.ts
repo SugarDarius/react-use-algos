@@ -16,7 +16,7 @@ describe('useBubbleSort test suite', () => {
 		const { result } = setUp([54, 2, 36, 42, 8], greaterCompareFn);
 		const { output } = result.current;
 
-		expect(output).toEqual([54, 2, 36, 42, 8]);
+		expect(output).toEqual([]);
 	});
 
 	it('sort the input', () => {
