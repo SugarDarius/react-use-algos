@@ -1,13 +1,13 @@
 # ```useBubbleSort```
 
 This [React](https://reactjs.org/) hook propose an implementation of the `bubble sort` algo. <br />
-Wrapped in a `useState` hook, you can keep in sync your shuffled input with your [React](https://reactjs.org/) component's lifecycles.
+Wrapped in a `useState` hook, you can keep in sync your input with your [React](https://reactjs.org/) component's lifecycles.
 
 ### How to use it?
 ```tsx
 import { useBubbleSort } from '@sugardarius/react-use-algos';
 
-export function bubbleSort() {
+export function BubbleSort() {
     const { output, sort } = useBubbleSort([54, 2, 36, 42, 8], (a: number, b: number): boolean => {
         return a > b;
     });

@@ -3,7 +3,7 @@ import { themes } from '@storybook/theming';
 export const parameters = {
     options: {
         storySort: {
-            order: ['Greetings', 'DataTypes', 'Algos', 'Formulas'],
+            order: ['Greetings', 'Collections', 'Algos', 'Formulas'],
         }
     },
     docs: {
