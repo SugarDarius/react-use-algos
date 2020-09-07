@@ -7,7 +7,7 @@ Wrapped in a `useState` hook, you can keep in sync your input with your [React](
 ```tsx
 import { useLinearSearch } from '@sugardarius/react-use-algos';
 
-export function LinearSearh() {
+export function LinearSearch() {
     const { indices, search } = useLinearSearch([54, 2, 36, 42, 8], 36, (a: number, b: number): boolean => {
         return a === b;
     });

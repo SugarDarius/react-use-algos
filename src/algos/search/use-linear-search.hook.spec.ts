@@ -11,7 +11,7 @@ const equalsCompareFn: UseLinearSearchEqualsCompareFn<number> = (a: number, b: n
 	return a === b;
 };
 
-describe('useBubbleSort test suite', () => {
+describe('useLinearSearch test suite', () => {
 	it('takes initial input', () => {
 		const { result } = setUp([54, 2, 36, 42, 8], 36, equalsCompareFn);
 		const { indices } = result.current;
