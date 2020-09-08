@@ -5,6 +5,7 @@ export type UseQueueReturnType<T> = {
 	remove: () => T | undefined;
 	first: () => T | undefined;
 	last: () => T | undefined;
+	toArray: () => T[];
 	isEmpty: () => boolean;
 	size: () => number;
 };
@@ -34,6 +35,9 @@ export function useQueue<T>(initialItems: T[] = []): UseQueueReturnType<T> {
 		},
 		last: (): T | undefined => {
 			return queue[queue.length - 1];
+		},
+		toArray: (): T[] => {
+			return [...queue];
 		},
 		isEmpty: (): boolean => {
 			return queue.length === 0;

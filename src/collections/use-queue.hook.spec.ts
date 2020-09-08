@@ -10,11 +10,16 @@ const setUp = (initialItems?: any[]) => {
 describe('useQueue test suite', () => {
 	it('takes initial items', () => {
 		const { result } = setUp(['firstCommand', 'secondCommand', 'thirdCommand']);
-		const { first, last, size } = result.current;
+		const { size } = result.current;
 
-		expect(first()).toEqual('firstCommand');
-		expect(last()).toEqual('thirdCommand');
 		expect(size()).toEqual(3);
+	});
+
+	it('uses an empty array as default value for items', () => {
+		const { result } = setUp();
+		const { size } = result.current;
+
+		expect(size()).toEqual(0);
 	});
 
 	it('appends new item', () => {
@@ -24,11 +29,7 @@ describe('useQueue test suite', () => {
 			result.current.add('forthCommand');
 		});
 
-		const { first, last, size } = result.current;
-
-		expect(first()).toEqual('firstCommand');
-		expect(last()).toEqual('forthCommand');
-		expect(size()).toEqual(4);
+		expect(result.current.toArray()).toEqual(['firstCommand', 'secondCommand', 'thirdCommand', 'forthCommand']);
 	});
 
 	it('removes first item', () => {
@@ -39,33 +40,31 @@ describe('useQueue test suite', () => {
 			removedItem = result.current.remove();
 		});
 
-		const { first, last, size } = result.current;
-
 		expect(removedItem).toEqual('firstCommand');
-		expect(first()).toEqual('secondCommand');
-		expect(last()).toEqual('thirdCommand');
-		expect(size()).toEqual(2);
+		expect(result.current.toArray()).toEqual(['secondCommand', 'thirdCommand']);
 	});
 
-	it('tells if the queue is empty', () => {
-		const { result } = setUp([]);
+	it('returns the first item', () => {
+		const { result } = setUp(['firstCommand', 'secondCommand', 'thirdCommand']);
 
-		const { first, last, size, isEmpty } = result.current;
-
-		expect(first()).toBeUndefined();
-		expect(last()).toBeUndefined();
-		expect(size()).toEqual(0);
-		expect(isEmpty()).toBeTruthy();
+		expect(result.current.first()).toEqual('firstCommand');
 	});
 
-	it('uses an empty array as default value for items', () => {
+	it('returns the last item', () => {
+		const { result } = setUp(['firstCommand', 'secondCommand', 'thirdCommand']);
+
+		expect(result.current.last()).toEqual('thirdCommand');
+	});
+
+	it('tells if is empty', () => {
 		const { result } = setUp();
 
-		const { first, last, size, isEmpty } = result.current;
+		expect(result.current.isEmpty()).toBe(true);
+	});
 
-		expect(first()).toBeUndefined();
-		expect(last()).toBeUndefined();
-		expect(size()).toEqual(0);
-		expect(isEmpty()).toBeTruthy();
+	it('returns the size', () => {
+		const { result } = setUp(['firstCommand', 'secondCommand', 'thirdCommand']);
+
+		expect(result.current.size()).toEqual(3);
 	});
 });

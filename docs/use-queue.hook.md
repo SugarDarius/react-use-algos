@@ -15,6 +15,7 @@ export function Commands() {
         last,
         isEmpty,
         size,
+        toArray,
     } = useQueue([
         'firstCommand',
         'secondCommand',
@@ -42,6 +43,9 @@ export function Commands() {
             >
                 Remove
             </button>
+            <pre>
+                {JSON.stringify(toArray(), null, 2)}
+            </pre>
         </div>
     );
 }
