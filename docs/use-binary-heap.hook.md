@@ -1,6 +1,6 @@
 # ```useBinaryHeap```
 
-This [React](https://reactjs.org/) hook propose a implementation of [Binary Heap](https://en.wikipedia.org/wiki/Binary_heap) (max or min).<br />
+This [React](https://reactjs.org/) hook propose a implementation of the [Binary Heap](https://en.wikipedia.org/wiki/Binary_heap) (max or min) data structure.<br />
 It's really useful when you need to store data with prioruty and remove the highest / lowest element.
 
 ### How to use it?

@@ -1,6 +1,6 @@
 # ```useQueue```
 
-This [React](https://reactjs.org/) hook propose a [FIFO](https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics)) queue.<br />
+This [React](https://reactjs.org/) hook propose a [Queue](https://en.wikibooks.org/wiki/Data_Structures/Stacks_and_Queues#Queues) data structure in [FIFO](https://en.wikipedia.org/wiki/FIFO_and_LIFO_accounting#FIFO) method.<br />
 It's really useful when you need to queue data for excuting commands, or interpretings user inputs after they made them.
 
 ### How to use it?
