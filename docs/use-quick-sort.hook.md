@@ -1,7 +1,7 @@
 #```useQuickSort```
 
 This[React](https://reactjs.org/) hook propose an implementation of the `quick sort` algo. <br />
-    Wrapped in a`useState` hook, you can keep in sync your input with your[React](https://reactjs.org/) component's lifecycles.
+Wrapped in a`useState` hook, you can keep in sync your input with your[React](https://reactjs.org/) component's lifecycles.
 
 ### How to use it ?
 ```tsx

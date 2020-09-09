@@ -1,6 +1,6 @@
 # ```useStack```
 
-This [React](https://reactjs.org/) hook propose a implementation of the [Stack](https://en.wikibooks.org/wiki/Data_Structures/Stacks_and_Queues#Stacks) data structure in [LIFO](https://en.wikipedia.org/wiki/FIFO_and_LIFO_accounting#LIFO) method.<br />.
+This [React](https://reactjs.org/) hook propose an implementation of the [Stack](https://en.wikibooks.org/wiki/Data_Structures/Stacks_and_Queues#Stacks) data structure in [LIFO](https://en.wikipedia.org/wiki/FIFO_and_LIFO_accounting#LIFO) method.<br />.
 It's really use when you need to manage some data objects.
 
 ### How to use it?
