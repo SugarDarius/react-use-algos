@@ -3,6 +3,12 @@
 </h1>
 
 <p align="center">
+  <a href="https://www.npmjs.com/package/@sugardarius/react-use-algos">
+    <img alt="npm" src="https://img.shields.io/npm/dm/@sugardarius/react-use-algos" />
+  </a>
+</p>
+
+<p align="center">
   <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/SugarDarius/react-use-algos" />
   <img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" />
   <a href="https://github.com/SugarDarius/react-use-algos/blob/master/LICENSE">
