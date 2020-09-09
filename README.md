@@ -43,32 +43,32 @@ In this project you can find theses, I hope, useful hooks!
 ### Collections
 Collections hooks are implementations of data structures:
 
-* [useBinaryHeap](./docs/use-binary-heap.hook.md): implementation of the [Binary Heap](https://en.wikipedia.org/wiki/Binary_heap) (max or min)
-* [useMap](./docs/use-map.hook.md): a tracking of a map (here as [literal object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects))
-* [useQueue](./docs/use-queue.hook.md): an implementation [Queue](https://en.wikibooks.org/wiki/Data_Structures/Stacks_and_Queues#Queues) data structure in [FIFO](https://en.wikipedia.org/wiki/FIFO_and_LIFO_accounting#FIFO) method
-* [useSet](./docs/use-set.hook.md): a racking of a [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
-* [useStack](./docs/use-stack.hook.md): an implementation of the [Stack](https://en.wikibooks.org/wiki/Data_Structures/Stacks_and_Queues#Stacks) data structure in [LIFO](https://en.wikipedia.org/wiki/FIFO_and_LIFO_accounting#LIFO) method
+* [useBinaryHeap](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-binary-heap.hook.md): implementation of the [Binary Heap](https://en.wikipedia.org/wiki/Binary_heap) (max or min)
+* [useMap](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-map.hook.md): a tracking of a map (here as [literal object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects))
+* [useQueue](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-queue.hook.md): an implementation [Queue](https://en.wikibooks.org/wiki/Data_Structures/Stacks_and_Queues#Queues) data structure in [FIFO](https://en.wikipedia.org/wiki/FIFO_and_LIFO_accounting#FIFO) method
+* [useSet](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-set.hook.md): a racking of a [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
+* [useStack](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-stack.hook.md): an implementation of the [Stack](https://en.wikibooks.org/wiki/Data_Structures/Stacks_and_Queues#Stacks) data structure in [LIFO](https://en.wikipedia.org/wiki/FIFO_and_LIFO_accounting#LIFO) method
 
 ### Algos
 Algos hooks are implementation of algorithms:
 
 * misc:
-  * [useMinReachJumps](./docs/use-min-reach-jumps.hook.md): an implementation of a misc algo: `min jump`. 
-  * [useTankCapacity](./docs/use-tank-capacity.hook.md): an implementation of a misc algo: `tank capacity`
+  * [useMinReachJumps](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-min-reach-jumps.hook.md): an implementation of a misc algo: `min jump`. 
+  * [useTankCapacity](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-tank-capacity.hook.md): an implementation of a misc algo: `tank capacity`
 * random:
-  * [useShuffle](./docs/use-shuffle.hook.md): an implementation of the `shuffle` algo.
+  * [useShuffle](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-shuffle.hook.md): an implementation of the `shuffle` algo.
 * search:
-  * [useBinarySearch](./docs/use-binary-search.hook.md): an implementation of the `binary search` algo
-  * [useLinearSearch](./docs/use-linear-search.hook.md): an implementation of the `linear search` algo
+  * [useBinarySearch](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-binary-search.hook.md): an implementation of the `binary search` algo
+  * [useLinearSearch](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-linear-search.hook.md): an implementation of the `linear search` algo
 * sorting:
-  * [useBubbleSort](./docs/use-bubble-sort.hook.md): an implementation of the `bubble sort` algo
-  * [useQuickSort](./docs/use-quick-sort.hook.md): an implementation of the `quick sort` algo
-  * [useSelectionSort](./docs/use-selection-sort.hook.md): an implementation of the `selection sort` algo 
+  * [useBubbleSort](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-bubble-sort.hook.md): an implementation of the `bubble sort` algo
+  * [useQuickSort](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-quick-sort.hook.md): an implementation of the `quick sort` algo
+  * [useSelectionSort](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-selection-sort.hook.md): an implementation of the `selection sort` algo 
 
 ### Formulas
 Formulas hooks are implementations of some well known formulas:
 
-* [useLerp](./docs/use-lerp.hook.md): an implementation of the precise [linear interpolation](https://en.wikipedia.org/wiki/Linear_interpolation) formula
+* [useLerp](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-lerp.hook.md): an implementation of the precise [linear interpolation](https://en.wikipedia.org/wiki/Linear_interpolation) formula
 
 ## Want to help? 😍
 If you want to make any controbutions to this projet to fix a bug, add a new hook or improve the documentation your are welcome 🙏🏻<br />
