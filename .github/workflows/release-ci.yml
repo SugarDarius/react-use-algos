@@ -14,7 +14,6 @@ jobs:
         if: "!contains(github.event.head_commit.message, 'skip ci')"
         runs-on: ubuntu-latest
         name: 'Build job'
-        id: buildjob
         steps:
             - uses: actions/checkout@v2
 
@@ -24,7 +23,9 @@ jobs:
                 node-version: 12.16.3
 
             - name: 'Install npm dependencies'
+              id: npmci
               run: npm ci
             
             - name: 'Run tests'
+              id: npmruntest
               run: npm run test
