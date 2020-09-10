@@ -28,5 +28,6 @@
         "storybook-build",
         "coverage",
         "docs",
+        "medias"
     ]
 }
