@@ -10,7 +10,9 @@
   <a href="https://www.npmjs.com/package/@sugardarius/react-use-algos">
     <img alt="npm" src="https://img.shields.io/npm/dm/@sugardarius/react-use-algos" />
   </a>
-  <img alt="ci" src="https://github.com/SugarDarius/react-use-algos/workflows/Release%20CI/badge.svg?branch=master&event=push" />
+  <a href="https://github.com/SugarDarius/react-use-algos/actions">
+    <img alt="ci" src="https://github.com/SugarDarius/react-use-algos/workflows/Release%20CI/badge.svg?branch=master&event=push" />
+  </a>
 </p>
 
 <p align="center">
