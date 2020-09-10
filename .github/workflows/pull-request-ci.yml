@@ -12,22 +12,22 @@ jobs:
             uses: actions/checkout@v2
             with:
               fetch-depth: 0
+            
+          - name: "Use Node.js 12.16.3"
+            uses: actions/setup-node@v1
+            with:
+              node-version: 12.16.3
 
-            - name: "Use Node.js 12.16.3"
-              uses: actions/setup-node@v1
-              with:
-                node-version: 12.16.3
+          - name: "Install npm dependencies"
+            id: npmci
+            run: npm ci
 
-            - name: "Install npm dependencies"
-              id: npmci
-              run: npm ci
+          - name: "Run tests"
+            id: npmruntest
+            run: npm run test
 
-            - name: "Run tests"
-              id: npmruntest
-              run: npm run test
-
-            - name: "Publish coverage results"
-              id: publishcoverageresults
-              uses: slavcodev/coverage-monitor-action@1.2.0
-              github_token: {{ secrets.GH_TOKEN }}
-              clover_file: "coverage/clover.xml"
+          - name: "Publish coverage results"
+            id: publishcoverageresults
+            uses: slavcodev/coverage-monitor-action@1.2.0
+            github_token: {{ secrets.GH_TOKEN }}
+            clover_file: "coverage/clover.xml"
