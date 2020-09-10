@@ -5,5 +5,6 @@ addons.setConfig({
     theme: {
         ...themes.dark,
         brandTitle: 'React Use Algos',
+        brandImage: '/logo.png',
     },
 });
