@@ -38,7 +38,7 @@
   "scripts": {
     "start:storybook": "start-storybook -p 8080 -s ./public",
     "build:storybook": "build-storybook -c .storybook -o storybook-build -s ./public",
-    "deploy:storybook:": "gh-pages -d storybook-build",
+    "deploy:storybook": "gh-pages -d storybook-build",
     "build": "tsc -p ./tsconfig.json",
     "release": "semantic-release",
     "format": "prettier --ignore-path ./.prettierignore --write",
