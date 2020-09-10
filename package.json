@@ -36,8 +36,8 @@
     "yarn": "yarn is not supported - please use npm"
   },
   "scripts": {
-    "start:storybook": "start-storybook -p 8080 -s ./public",
-    "build:storybook": "build-storybook -c .storybook -o storybook-build -s ./public",
+    "start:storybook": "start-storybook -p 8080 -s ./public --docs",
+    "build:storybook": "build-storybook -c .storybook -o storybook-build -s ./public --docs",
     "deploy:storybook": "gh-pages -d storybook-build",
     "build": "tsc -p ./tsconfig.json",
     "release": "semantic-release",
