@@ -10,10 +10,10 @@ on:
         branches:
             - master
 jobs:
-    build_job:
+    build_and_publish_package_job:
         if: "!contains(github.event.head_commit.message, 'skip ci')"
         runs-on: ubuntu-latest
-        name: 'Build job'
+        name: 'Build & Publish package'
         steps:
             - uses: actions/checkout@v2
 
