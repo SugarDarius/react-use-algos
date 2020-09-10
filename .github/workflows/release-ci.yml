@@ -13,34 +13,61 @@ jobs:
     build_and_release_package_job:
         if: "!contains(github.event.head_commit.message, 'skip ci')"
         runs-on: ubuntu-latest
-        name: 'Build & Release package'
+        name: "Build & Release package"
         steps:
-            - name: 'Checkout code'
-              uses: actions/checkout@v2
-              with:
-                fetch-depth: 0
+          - name: "Checkout code"
+            uses: actions/checkout@v2
+            with:
+              fetch-depth: 0
 
-            - name: 'Use Node.js 12.16.3'
-              uses: actions/setup-node@v1
-              with:
-                node-version: 12.16.3
+          - name: "Use Node.js 12.16.3"
+            uses: actions/setup-node@v1
+            with:
+              node-version: 12.16.3
 
-            - name: 'Install npm dependencies'
-              id: npmci
-              run: npm ci
-            
-            - name: 'Run tests'
-              id: npmruntest
-              run: npm run test
+          - name: "Install npm dependencies"
+            id: npmci
+            run: npm ci
+          
+          - name: "Run tests"
+            id: npmruntest
+            run: npm run test
 
-            - name: 'Build'
-              id: npmrunbuild
-              run: npm run build
+          - name: "Build"
+            id: npmrunbuild
+            run: npm run build
 
-            - name: 'Release'
-              id: npmrunrelease
-              env:
-                GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-                NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-              run: npm run release
+          - name: "Release"
+            id: npmrunrelease
+            env:
+              GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+              NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+            run: npm run release
+    build_and_deploy_storybook_job:
+        if: "!contains(github.event.head_commit.message, 'skip ci')"
+        runs-on: ubuntu-latest
+        name: "Build & Deploy Storybook"
+        steps:
+          - name: "Checout code"
+            uses: actions/checkout@v2
+            with:
+              fetch-depth: 0
+
+          - name: "Use Node.js 12.16.3"
+            uses: actions/setup-node@v1
+            with:
+              node-version: 12.16.3
+
+          - name: "Install npm dependencies"
+            id: npmci
+            run: npm ci
+          
+          - name: "Build"
+            id: npmrunbuildstorybook
+            run: npm run build:storybook
+
+          - name: "Deploy"
+            id: npmrundeploystorybook
+            run: npm run deploy:storybook -- --ci
+
 
