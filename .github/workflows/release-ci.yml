@@ -69,5 +69,6 @@ jobs:
           - name: "Deploy"
             id: npmrundeploystorybook
             run: npm run deploy:storybook -- --ci
-
+            env:
+              GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
