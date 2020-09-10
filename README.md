@@ -16,7 +16,7 @@
   <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/SugarDarius/react-use-algos" />
   <img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" />
   <a href="https://github.com/SugarDarius/react-use-algos/blob/master/LICENSE">
-    <img alt="GitHub" src="https://img.shields.io/github/license/SugarDarius/react-use-algos" />
+    <img alt="License" src="https://img.shields.io/github/license/SugarDarius/react-use-algos" />
   </a>
 </p>
 
