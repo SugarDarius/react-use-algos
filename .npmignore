@@ -16,6 +16,9 @@ src/
 **/*.tsx
 *.tsx
 
+**/*.spec.js
+*.spec.js
+
 !**/*.d.ts
 !*.d.ts
 
@@ -36,4 +39,8 @@ jest.config.js
 .prettierignore
 .prettierrc.json
 
-.releaserc
+.releaserc.json
+
+CHANGELOG.md
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
