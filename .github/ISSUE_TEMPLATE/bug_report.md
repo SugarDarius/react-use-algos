@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Create a report to help us improve react-use-algos
+about: Create a bug report to help us improve react-use-algos
 title: ''
 labels: ''
 assignees: ''
