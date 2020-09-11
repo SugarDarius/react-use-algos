@@ -48,7 +48,7 @@ jobs:
         runs-on: ubuntu-latest
         name: "Build & Deploy Storybook"
         steps:
-          - name: "Checout code"
+          - name: "Checkout code"
             uses: actions/checkout@v2
             with:
               fetch-depth: 0
