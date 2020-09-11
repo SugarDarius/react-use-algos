@@ -87,5 +87,5 @@ Many thanks to the [react-use](https://github.com/streamich/react-use) project f
 We can do more with [React Hooks](https://reactjs.org/docs/hooks-intro.html)! 💪🏻
 
 <p align="center">
-    This project is made with ♥ <a href="https://github.com/SugarDarius"> by SugarDarius</a>
+    This project is made with ♥ by <a href="https://github.com/SugarDarius">SugarDarius</a>
 </p>
