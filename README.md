@@ -7,25 +7,37 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@sugardarius/react-use-algos">
-    <img alt="npm" src="https://img.shields.io/npm/dm/@sugardarius/react-use-algos" />
-  </a>
+  <img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" />
+  <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/sugardarius/react-use-algos?style=flat-square" />
   <a href="https://github.com/SugarDarius/react-use-algos/actions">
     <img alt="ci" src="https://github.com/SugarDarius/react-use-algos/workflows/Release%20CI/badge.svg?branch=master&event=push" />
+  </a>
+  <a href="https://sugardarius.github.io/react-use-algos">
+    <img alt="Website" src="https://img.shields.io/website?down_color=red&down_message=down&label=storybook&style=flat-square&up_color=blue&url=https%3A%2F%2Fsugardarius.github.io%2Freact-use-algos" />
   </a>
 </p>
 
 <p align="center">
-  <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/SugarDarius/react-use-algos" />
-  <img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" />
-  <a href="https://github.com/SugarDarius/react-use-algos/blob/master/LICENSE">
-    <img alt="License" src="https://img.shields.io/github/license/SugarDarius/react-use-algos" />
+  <img alt="npm package latest version (scoped)" src="https://img.shields.io/npm/v/@sugardarius/react-use-algos?label=package%20version@latest&style=flat-square" />
+  <img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/sugardarius/react-use-algos?style=flat-square">
+  <a href="https://www.npmjs.com/package/@sugardarius/react-use-algos">
+    <img alt="npm downloads" src="https://img.shields.io/npm/dm/@sugardarius/react-use-algos?style=flat-square" />
   </a>
+  <a href="https://github.com/SugarDarius/react-use-algos/blob/master/LICENSE">
+    <img alt="License" src="https://img.shields.io/github/license/SugarDarius/react-use-algos?style=flat-square" />
+  </a>
+</p>
+
+<p align="center">
+  <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/SugarDarius/react-use-algos?style=flat-square" />
+  <img alt="GitHub closed issues" src="https://img.shields.io/github/issues-closed-raw/sugardarius/react-use-algos?style=flat-square" />
+  <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr-raw/sugardarius/react-use-algos?style=flat-square" />
+  <img alt="GitHub closed pull requests" src="https://img.shields.io/github/issues-pr-closed-raw/sugardarius/react-use-algos?style=flat-square" />
 </p>
 
 <p align="center">
   <a href="https://twitter.com/azeldvin">
-    <img alt="say" src="https://img.shields.io/badge/say-hi!-blue" />
+    <img alt="say" src="https://img.shields.io/badge/say-hi!-blue?style=flat-square" />
   </a>
   <a href="https://twitter.com/azeldvin">  
     <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/azeldvin?style=social" />
