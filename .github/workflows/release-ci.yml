@@ -43,6 +43,7 @@ jobs:
               GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
               NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
             run: npm run release
+            
     build_and_deploy_storybook_job:
         if: "!contains(github.event.head_commit.message, 'skip ci')"
         runs-on: ubuntu-latest
