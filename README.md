@@ -19,7 +19,7 @@
 
 <p align="center">
   <img alt="npm package latest version (scoped)" src="https://img.shields.io/npm/v/@sugardarius/react-use-algos?label=package%20version@latest&style=flat-square" />
-  <img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/sugardarius/react-use-algos?style=flat-square">
+  <img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/sugardarius/react-use-algos?style=flat-square" />
   <a href="https://www.npmjs.com/package/@sugardarius/react-use-algos">
     <img alt="npm downloads" src="https://img.shields.io/npm/dm/@sugardarius/react-use-algos?style=flat-square" />
   </a>
