@@ -49,6 +49,8 @@
 
 This project is made to be open source and driven by the community so please feel free to send your feed back, ideas and of course your PRs are welcome 🙏🏻
 
+And, it is written with [TypeScript](https://www.typescriptlang.org/) and released with [GitHub Actions](https://github.com/features/actions) 🤗
+
 ## First things first 😜
 Let's begin by installing the package:
 
