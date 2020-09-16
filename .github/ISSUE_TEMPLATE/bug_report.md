@@ -25,5 +25,5 @@ By providing this, we will be much faster to investigate and fix the bug 😊
 * __OS__:
 * __Browser__:
 * __React version__:
-* __`react-use-algos` verion__:
+* __`react-use-algos` version__:
 * __Did this worked into the previous package's versions?__

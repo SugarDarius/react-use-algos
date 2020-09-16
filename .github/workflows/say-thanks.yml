@@ -1,6 +1,10 @@
 name: Say Thanks
 
-on: [pull_request, issues]
+on:
+    issues:
+        types: [opened]
+    pull_request:
+        types: [opened]
 jobs:
     say_thanks:
         runs-on: ubuntu-latest
