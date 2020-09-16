@@ -68,7 +68,7 @@ Collections hooks are implementations of data structures:
 * [useBinaryHeap](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-binary-heap.hook.md): implementation of the [Binary Heap](https://en.wikipedia.org/wiki/Binary_heap) (max or min)
 * [useMap](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-map.hook.md): a tracking of a map (here as [literal object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects))
 * [useQueue](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-queue.hook.md): an implementation of the [Queue](https://en.wikibooks.org/wiki/Data_Structures/Stacks_and_Queues#Queues) data structure in [FIFO](https://en.wikipedia.org/wiki/FIFO_and_LIFO_accounting#FIFO) method
-* [useSet](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-set.hook.md): a racking of a [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
+* [useSet](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-set.hook.md): a tracking of a [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
 * [useStack](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-stack.hook.md): an implementation of the [Stack](https://en.wikibooks.org/wiki/Data_Structures/Stacks_and_Queues#Stacks) data structure in [LIFO](https://en.wikipedia.org/wiki/FIFO_and_LIFO_accounting#LIFO) method
 
 ### Algos
