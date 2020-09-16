@@ -29,5 +29,5 @@ jobs:
           - name: "Publish coverage results"
             id: publishcoverageresults
             uses: slavcodev/coverage-monitor-action@1.2.0
-            github_token: {{ secrets.GH_TOKEN }}
+            github_token: ${{ secrets.GH_TOKEN }}
             clover_file: "coverage/clover.xml"
