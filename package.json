@@ -1,6 +1,6 @@
 {
   "name": "@sugardarius/react-use-algos",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple library of React hooks to use some algorithms, formulas and data structures.",
   "readme": "<rootDir>/README.md",
   "homepage": "https://github.com/SugarDarius/react-use-algos#readme",
@@ -38,7 +38,7 @@
   "scripts": {
     "start:storybook": "start-storybook -p 8080 -s ./public --docs",
     "build:storybook": "build-storybook -c .storybook -o storybook-build -s ./public --docs",
-    "deploy:storybook": "storybook-to-ghpages -e storybook-build" ,
+    "deploy:storybook": "storybook-to-ghpages -e storybook-build",
     "build": "tsc -p ./tsconfig.json",
     "release": "semantic-release",
     "format": "prettier --ignore-path ./.prettierignore --write",
