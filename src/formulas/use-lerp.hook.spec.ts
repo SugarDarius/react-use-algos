@@ -15,7 +15,7 @@ describe('useLerp test suite', () => {
 		expect(value).toEqual(0);
 	});
 
-	it('computes a linear interpolation', () => {
+	it('computes a linear interpolation', async () => {
 		const { result, waitForNextUpdate } = setUp(10, 20, 6);
 		const { compute } = result.current;
 
