@@ -29,10 +29,7 @@
                 "fix",
                 "perf",
                 "refactor",
-                "revert",
-                "style",
-                "test",
-                "sample"
+                "test"
             ]
         ]
     }

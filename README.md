@@ -9,8 +9,13 @@
 <p align="center">
   <img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" />
   <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/sugardarius/react-use-algos?style=flat-square" />
+</p>
+<p align="center">
   <a href="https://github.com/SugarDarius/react-use-algos/actions">
     <img alt="ci" src="https://github.com/SugarDarius/react-use-algos/workflows/Release%20CI/badge.svg?branch=master&event=push" />
+  </a>
+  <a href="https://github.com/semantic-release/semantic-release">
+    <img alt="semantic-release" src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square" />
   </a>
   <a href="https://sugardarius.github.io/react-use-algos">
     <img alt="Website" src="https://img.shields.io/website?down_color=red&down_message=down&label=storybook&style=flat-square&up_color=blue&url=https%3A%2F%2Fsugardarius.github.io%2Freact-use-algos" />

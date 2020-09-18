@@ -11,5 +11,33 @@
         "@semantic-release/changelog",
         "@semantic-release/npm",
         "@semantic-release/git"
+    ],
+    "plugins": [
+        [
+            "@semantic-release/commit-analyzer",
+            {
+                "preset": "angular",
+                "releaseRules": [
+                    { "type": "project", "release": false },
+                    { "type": "config", "release": false },
+                    { "type": "arch", "release": false },
+                    { "type": "ci", "release": false },
+                    { "type": "docs", "release": false },
+                    { "type": "test", "release": "patch" },
+                    { "type": "build", "release": "patch" },
+                    { "type": "fix", "release": "patch" },
+                    { "type": "perf", "release": "patch" },
+                    { "type": "refactor", "release": "patch" },
+                    { "type": "chore", "release": "minor" },
+                    { "type": "feat", "release": "minor" }
+                ],
+                "parserOpts": {
+                    "noteKeywords": [
+                        "BREAKING CHANGE", 
+                        "BREAKING CHANGES"
+                    ]
+                }
+            }
+        ]
     ]
 }
