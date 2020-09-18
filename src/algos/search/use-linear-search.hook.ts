@@ -10,8 +10,8 @@ export function useLinearSearch<T>(input: T[], seekedItem: T, equalsCompareFn: U
 	const [indices, setIndices] = React.useState<number[]>([]);
 
 	const search = React.useCallback(
-		async (input: T[], seekedItem: T): Promise<void> => {
-			const indices = await new Promise<number[]>((resolve): void => {
+		(input: T[], seekedItem: T): void => {
+			Promise.resolve().then((): void => {
 				let idcs: number[] = [];
 
 				for (let i = 0; i < input.length; i++) {
@@ -20,10 +20,8 @@ export function useLinearSearch<T>(input: T[], seekedItem: T, equalsCompareFn: U
 					}
 				}
 
-				resolve(idcs);
+				setIndices(idcs);
 			});
-
-			setIndices(indices);
 		},
 		[input, seekedItem]
 	);

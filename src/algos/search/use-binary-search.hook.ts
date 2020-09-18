@@ -17,8 +17,8 @@ export function useBinarySearch<T>(input: T[], seekedItem: T, compareFns: UseBin
 	const [index, setIndex] = React.useState<number>(-1);
 
 	const search = React.useCallback(
-		async (input: T[], seekedItem: T): Promise<void> => {
-			const index = await new Promise<number>((resolve): void => {
+		(input: T[], seekedItem: T): void => {
+			Promise.resolve().then((): void => {
 				let startIndex = 0,
 					endIndex = input.length - 1;
 				let foundIndex = -1;
@@ -38,10 +38,8 @@ export function useBinarySearch<T>(input: T[], seekedItem: T, compareFns: UseBin
 					}
 				}
 
-				resolve(foundIndex);
+				setIndex(foundIndex);
 			});
-
-			setIndex(index);
 		},
 		[input, seekedItem]
 	);

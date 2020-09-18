@@ -18,8 +18,8 @@ export function useQuickSort<T>(input: T[], compareFns: UseQuickSortCompareFns<T
 	const [output, setOutput] = React.useState<T[]>([]);
 
 	const sort = React.useCallback(
-		async (input: T[]): Promise<void> => {
-			const sortedInput = await new Promise<T[]>((resolve): void => {
+		(input: T[]): void => {
+			Promise.resolve().then((): void => {
 				const inputToSort: T[] = [...input];
 				const fn = (input: T[]): T[] => {
 					if (input.length > 1) {
@@ -50,10 +50,9 @@ export function useQuickSort<T>(input: T[], compareFns: UseQuickSortCompareFns<T
 					return input;
 				};
 
-				resolve(fn(inputToSort));
+				const sortedInput = fn(inputToSort);
+				setOutput(sortedInput);
 			});
-
-			setOutput(sortedInput);
 		},
 		[input]
 	);

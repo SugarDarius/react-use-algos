@@ -11,8 +11,8 @@ export function useSelectionSort<T>(input: T[], greaterCompareFn: UseSelectionSo
 	const [output, setOutput] = React.useState<T[]>([]);
 
 	const sort = React.useCallback(
-		async (input: T[]): Promise<void> => {
-			const sortedInput = await new Promise<T[]>((resolve) => {
+		(input: T[]): void => {
+			Promise.resolve().then((): void => {
 				const inputToSort: T[] = [...input];
 				const length = input.length;
 
@@ -33,10 +33,8 @@ export function useSelectionSort<T>(input: T[], greaterCompareFn: UseSelectionSo
 					}
 				}
 
-				resolve(inputToSort);
+				setOutput(inputToSort);
 			});
-
-			setOutput(sortedInput);
 		},
 		[input]
 	);
