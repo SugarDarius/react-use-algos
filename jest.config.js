@@ -5,6 +5,7 @@ module.exports = {
             tsconfig: 'tsconfig.test.json'
         },
     },
+    testEnvironment: 'jsdom',
     clearMocks: true,
     testMatch: [
         '<rootDir>/src/**/*.spec.(ts|tsx)',
