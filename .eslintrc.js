@@ -9,7 +9,7 @@ module.exports = {
     ],
     root: true,
     env: {
-        node: true,
+        "browser": true,
     },
     rules: {
         '@typescript-eslint/interface-name-prefix': 'off',
