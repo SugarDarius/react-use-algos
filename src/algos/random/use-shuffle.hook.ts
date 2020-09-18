@@ -10,23 +10,25 @@ export function useShuffle<T>(input: T[] = []): UseShuffleReturnType<T> {
 
 	const shuffle = React.useCallback(
 		(list: T[]): void => {
-			const length = list.length;
-			const shuffledList = [...list];
+			Promise.resolve().then((): void => {
+				const length = list.length;
+				const shuffledList = [...list];
 
-			if (length > 0) {
-				let index = -1;
-				const lastIndex = length - 1;
+				if (length > 0) {
+					let index = -1;
+					const lastIndex = length - 1;
 
-				while (++index < length) {
-					const rand = index + Math.floor(Math.random() * (lastIndex - index + 1));
-					const value = shuffledList[rand];
+					while (++index < length) {
+						const rand = index + Math.floor(Math.random() * (lastIndex - index + 1));
+						const value = shuffledList[rand];
 
-					shuffledList[rand] = shuffledList[index];
-					shuffledList[index] = value;
+						shuffledList[rand] = shuffledList[index];
+						shuffledList[index] = value;
+					}
 				}
 
 				setOutput(shuffledList);
-			}
+			});
 		},
 		[input]
 	);
