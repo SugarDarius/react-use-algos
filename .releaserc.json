@@ -2,16 +2,6 @@
     "branches": [
         "master"
     ],
-    "verifyConditions": [
-        "@semantic-release/changelog",
-        "@semantic-release/npm",
-        "@semantic-release/git"
-    ],
-    "prepare": [
-        "@semantic-release/changelog",
-        "@semantic-release/npm",
-        "@semantic-release/git"
-    ],
     "plugins": [
         [
             "@semantic-release/commit-analyzer",
@@ -38,6 +28,21 @@
                     ]
                 }
             }
-        ]
+        ],
+        [
+            "@semantic-release/release-notes-generator",
+            {
+                "preset": "angular",
+                "parserOpts": {
+                    "noteKeywords": [
+                        "BREAKING CHANGE", 
+                        "BREAKING CHANGES"
+                    ]
+                }
+            }
+        ],
+        "@semantic-release/changelog",
+        "@semantic-release/npm",
+        "@semantic-release/git"
     ]
 }
