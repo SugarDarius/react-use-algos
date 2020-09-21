@@ -19,8 +19,8 @@ export function useBinarySearch<T>(input: T[], seekedItem: T, compareFns: UseBin
 	const search = React.useCallback(
 		(input: T[], seekedItem: T): void => {
 			Promise.resolve().then((): void => {
-				let startIndex = 0,
-					endIndex = input.length - 1;
+				let startIndex = 0;
+				let endIndex = input.length - 1;
 				let foundIndex = -1;
 
 				while (startIndex <= endIndex) {

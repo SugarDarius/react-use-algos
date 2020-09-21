@@ -87,6 +87,7 @@ Algos hooks are implementation of algorithms:
 * search:
   * [useBinarySearch](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-binary-search.hook.md): an implementation of the `binary search` algo
   * [useLinearSearch](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-linear-search.hook.md): an implementation of the `linear search` algo
+  * [useInterpolationSearch](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-interpolation-search.hook.md): an implementation of the [`interpolation search`](https://en.wikipedia.org/wiki/Interpolation_search) algo.
 * sorting:
   * [useBubbleSort](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-bubble-sort.hook.md): an implementation of the `bubble sort` algo
   * [useQuickSort](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-quick-sort.hook.md): an implementation of the `quick sort` algo
