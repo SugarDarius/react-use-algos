@@ -75,6 +75,7 @@ Collections hooks are implementations of data structures:
 * [useQueue](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-queue.hook.md): an implementation of the [Queue](https://en.wikibooks.org/wiki/Data_Structures/Stacks_and_Queues#Queues) data structure in [FIFO](https://en.wikipedia.org/wiki/FIFO_and_LIFO_accounting#FIFO) method
 * [useSet](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-set.hook.md): a tracking of a [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
 * [useStack](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-stack.hook.md): an implementation of the [Stack](https://en.wikibooks.org/wiki/Data_Structures/Stacks_and_Queues#Stacks) data structure in [LIFO](https://en.wikipedia.org/wiki/FIFO_and_LIFO_accounting#LIFO) method
+* [useHashTable](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-hash-table.hook.md) : an implementation of the [Hash Table](https://en.wikipedia.org/wiki/Hash_table) data structure
 
 ### Algos
 Algos hooks are implementation of algorithms:
