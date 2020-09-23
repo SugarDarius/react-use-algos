@@ -92,7 +92,9 @@ Algos hooks are implementation of algorithms:
 * sorting:
   * [useBubbleSort](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-bubble-sort.hook.md): an implementation of the `bubble sort` algo
   * [useQuickSort](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-quick-sort.hook.md): an implementation of the `quick sort` algo
-  * [useSelectionSort](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-selection-sort.hook.md): an implementation of the `selection sort` algo 
+  * [useSelectionSort](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-selection-sort.hook.md): an implementation of the `selection sort` algo
+* generate:
+  * [useRange](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-range.hook.md): an implementation for the generation of a range of integers
 
 ### Formulas
 Formulas hooks are implementations of some well known formulas:
