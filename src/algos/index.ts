@@ -3,3 +3,4 @@ export * from './random';
 export * from './sorting';
 export * from './search';
 export * from './generate';
+export * from './compute';

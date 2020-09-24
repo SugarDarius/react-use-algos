@@ -50,7 +50,7 @@
 </p>
 
 ## Greetings 👋
-`React Use Algos` is an [npm](https://www.npmjs.com/) package which proposes you a libray of [React Hooks](https://reactjs.org/docs/hooks-intro.html) to use some collections, formulas and algos 💪🏻
+`React Use Algos` is an [npm](https://www.npmjs.com/) package which proposes you a library of user oriented [React Hooks](https://reactjs.org/docs/hooks-intro.html) to use some collections, formulas and algos 💪🏻
 
 This project is made to be open source and driven by the community so please feel free to send your feed back, ideas and of course your PRs are welcome 🙏🏻
 
@@ -95,6 +95,8 @@ Algos hooks are implementation of algorithms:
   * [useSelectionSort](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-selection-sort.hook.md): an implementation of the `selection sort` algo
 * generate:
   * [useRange](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-range.hook.md): an implementation for the generation of a range of integers
+* compute:
+  * [usePascalTriangle](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-pascal-triangle.hook.md): an implementation of the [Pascal Triangle](https://en.wikipedia.org/wiki/Linear_interpolation) algorithm
 
 ### Formulas
 Formulas hooks are implementations of some well known formulas:
