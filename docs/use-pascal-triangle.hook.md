@@ -1,4 +1,4 @@
-# ```useLerp```
+# ```usePascalTriangle```
 
 This [React](https://reactjs.org/) hook propose an implementation of the [Pascal Triangle](https://en.wikipedia.org/wiki/Linear_interpolation) algorithm <br />
 It will the given row index input of a the triangle to compute as output the triangle row as an array of integers.<br />

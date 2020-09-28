@@ -97,6 +97,7 @@ Algos hooks are implementation of algorithms:
   * [useRange](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-range.hook.md): an implementation for the generation of a range of integers
 * compute:
   * [usePascalTriangle](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-pascal-triangle.hook.md): an implementation of the [Pascal Triangle](https://en.wikipedia.org/wiki/Linear_interpolation) algorithm
+  * [useGCD](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-gcd.hook.md): an implementation of the [Euclidean algorithm](https://en.wikipedia.org/wiki/Euclidean_algorithm) to compute iteratively the greatest common divisor (GCD)
 
 ### Formulas
 Formulas hooks are implementations of some well known formulas:
