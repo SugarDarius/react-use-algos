@@ -20,7 +20,7 @@ export function Range() {
                 Generate it!
             </button>
             <pre>
-                {JSON.stringify(lirangest, null, 2)}
+                {JSON.stringify(range, null, 2)}
             </pre>
         </div>
     );

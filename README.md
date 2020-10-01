@@ -81,10 +81,10 @@ Collections hooks are implementations of data structures:
 Algos hooks are implementation of algorithms:
 
 * misc:
-  * [useMinReachJumps](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-min-reach-jumps.hook.md): an implementation of a misc algo: `min jump`. 
+  * [useMinReachJumps](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-min-reach-jumps.hook.md): an implementation of a misc algo: `min jump`
   * [useTankCapacity](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-tank-capacity.hook.md): an implementation of a misc algo: `tank capacity`
 * random:
-  * [useShuffle](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-shuffle.hook.md): an implementation of the `shuffle` algo.
+  * [useShuffle](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-shuffle.hook.md): an implementation of the `shuffle` algo
 * search:
   * [useBinarySearch](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-binary-search.hook.md): an implementation of the `binary search` algo
   * [useLinearSearch](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-linear-search.hook.md): an implementation of the `linear search` algo
@@ -103,6 +103,8 @@ Algos hooks are implementation of algorithms:
 Formulas hooks are implementations of some well known formulas:
 
 * [useLerp](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-lerp.hook.md): an implementation of the precise [linear interpolation](https://en.wikipedia.org/wiki/Linear_interpolation) formula
+* [useRadianToDegrees](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-radian-to-degrees.hook.md): an implementation to compute an angle as radian in degrees
+* [useDegreesToRadian](https://github.com/SugarDarius/react-use-algos/blob/master/docs/use-degrees-to-radian.hook.md): an implementation to compute an angle as degrees in radian
 
 ## Want to help? 😍
 If you want to make any controbutions to this projet to fix a bug, add a new hook or improve the documentation your are welcome 🙏🏻<br />
