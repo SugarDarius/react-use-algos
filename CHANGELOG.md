@@ -1,3 +1,5 @@
+# [1.7.0](https://github.com/SugarDarius/react-use-algos/compare/v1.6.0...v1.7.0) (2020-10-01)
+
 # [1.6.0](https://github.com/SugarDarius/react-use-algos/compare/v1.5.0...v1.6.0) (2020-09-28)
 
 # [1.5.0](https://github.com/SugarDarius/react-use-algos/compare/v1.4.0...v1.5.0) (2020-09-24)
