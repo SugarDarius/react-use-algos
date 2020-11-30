@@ -1,3 +1,11 @@
+# [1.8.0](https://github.com/SugarDarius/react-use-algos/compare/v1.7.0...v1.8.0) (2020-11-30)
+
+
+### Features
+
+* **packages:** upgrade packages ([96f1b9e](https://github.com/SugarDarius/react-use-algos/commit/96f1b9ec98297388aa009b551bce33104ff50469))
+* **node:** use latest node version ([cae0521](https://github.com/SugarDarius/react-use-algos/commit/cae0521d8375a2ddfc98725a98d97229eb837cb9))
+
 # [1.7.0](https://github.com/SugarDarius/react-use-algos/compare/v1.6.0...v1.7.0) (2020-10-01)
 
 # [1.6.0](https://github.com/SugarDarius/react-use-algos/compare/v1.5.0...v1.6.0) (2020-09-28)
