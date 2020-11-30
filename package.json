@@ -1,101 +1,101 @@
 {
-  "name": "@sugardarius/react-use-algos",
-  "version": "1.7.0",
-  "description": "A simple library of React hooks to use some algorithms, formulas and data structures.",
-  "readme": "<rootDir>/README.md",
-  "homepage": "https://github.com/SugarDarius/react-use-algos#readme",
-  "bugs": {
-    "url": "https://github.com/SugarDarius/react-use-algos/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/SugarDarius/react-use-algos.git"
-  },
-  "license": "MIT",
-  "author": {
-    "name": "Aurélien Dupays Dexemple",
-    "url": "https://github.com/SugarDarius"
-  },
-  "keywords": [
-    "React",
-    "React Hooks",
-    "Isomorphic",
-    "TypeScript"
-  ],
-  "main": "./lib/index.js",
-  "types": "./lib/index.d.ts",
-  "files": [
-    "lib/"
-  ],
-  "publishConfig": {
-    "access": "public"
-  },
-  "engines": {
-    "node": ">=15.x.x",
-    "npm": ">=7.x.x",
-    "yarn": "yarn is not supported - please use npm"
-  },
-  "scripts": {
-    "start:storybook": "start-storybook -p 8080 -s ./public --docs",
-    "build:storybook": "build-storybook -c .storybook -o storybook-build -s ./public --docs",
-    "deploy:storybook": "storybook-to-ghpages -e storybook-build",
-    "build": "tsc -p ./tsconfig.json",
-    "release": "semantic-release",
-    "format": "prettier --ignore-path ./.prettierignore --write",
-    "lint": "eslint --fix",
-    "test": "jest --maxWorkers 2",
-    "reinstall": "node ./scripts/reinstall.script.js",
-    "semantic-release": "semantic-release"
-  },
-  "devDependencies": {
-    "@babel/core": "7.11.5",
-    "@commitlint/cli": "9.1.2",
-    "@commitlint/config-angular": "9.1.2",
-    "@semantic-release/changelog": "5.0.1",
-    "@semantic-release/commit-analyzer": "8.0.1",
-    "@semantic-release/git": "9.0.0",
-    "@semantic-release/github": "7.1.1",
-    "@semantic-release/npm": "7.0.5",
-    "@semantic-release/release-notes-generator": "9.0.1",
-    "@storybook/addon-actions": "6.0.21",
-    "@storybook/addon-essentials": "6.0.21",
-    "@storybook/addon-links": "6.0.21",
-    "@storybook/addons": "6.0.21",
-    "@storybook/react": "6.0.21",
-    "@storybook/storybook-deployer": "2.8.6",
-    "@storybook/theming": "6.0.21",
-    "@testing-library/react": "11.0.1",
-    "@testing-library/react-hooks": "3.4.1",
-    "@types/chalk": "2.2.0",
-    "@types/jest": "26.0.13",
-    "@types/node": "14.6.3",
-    "@types/react": "16.9.49",
-    "@types/react-dom": "16.9.8",
-    "@types/shelljs": "0.8.8",
-    "@typescript-eslint/eslint-plugin": "4.0.1",
-    "@typescript-eslint/parser": "4.0.1",
-    "babel-loader": "8.1.0",
-    "chalk": "4.1.0",
-    "eslint": "7.8.1",
-    "eslint-config-prettier": "6.11.0",
-    "eslint-plugin-import": "2.22.0",
-    "husky": "4.2.5",
-    "jest": "26.4.2",
-    "lint-staged": "10.3.0",
-    "prettier": "2.1.1",
-    "react-is": "16.13.1",
-    "react-test-renderer": "16.13.1",
-    "semantic-release": "^17.1.1",
-    "shelljs": "0.8.4",
-    "ts-jest": "26.3.0",
-    "typescript": "4.0.2"
-  },
-  "dependencies": {
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
-  },
-  "peerDependencies": {
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
-  }
+	"name": "@sugardarius/react-use-algos",
+	"version": "1.7.0",
+	"description": "A simple library of React hooks to use some algorithms, formulas and data structures.",
+	"readme": "<rootDir>/README.md",
+	"homepage": "https://github.com/SugarDarius/react-use-algos#readme",
+	"bugs": {
+		"url": "https://github.com/SugarDarius/react-use-algos/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/SugarDarius/react-use-algos.git"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Aurélien Dupays Dexemple",
+		"url": "https://github.com/SugarDarius"
+	},
+	"keywords": [
+		"React",
+		"React Hooks",
+		"Isomorphic",
+		"TypeScript"
+	],
+	"main": "./lib/index.js",
+	"types": "./lib/index.d.ts",
+	"files": [
+		"lib/"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"engines": {
+		"node": ">=15.x.x",
+		"npm": ">=7.x.x",
+		"yarn": "yarn is not supported - please use npm"
+	},
+	"scripts": {
+		"start:storybook": "start-storybook -p 8080 -s ./public --docs",
+		"build:storybook": "build-storybook -c .storybook -o storybook-build -s ./public --docs",
+		"deploy:storybook": "storybook-to-ghpages -e storybook-build",
+		"build": "tsc -p ./tsconfig.json",
+		"release": "semantic-release",
+		"format": "prettier --ignore-path ./.prettierignore --write",
+		"lint": "eslint --fix",
+		"test": "jest --maxWorkers 2",
+		"reinstall": "node ./scripts/reinstall.script.js",
+		"semantic-release": "semantic-release"
+	},
+	"devDependencies": {
+		"@babel/core": "7.12.9",
+		"@commitlint/cli": "11.0.0",
+		"@commitlint/config-angular": "11.0.0",
+		"@semantic-release/changelog": "5.0.1",
+		"@semantic-release/commit-analyzer": "8.0.1",
+		"@semantic-release/git": "9.0.0",
+		"@semantic-release/github": "7.2.0",
+		"@semantic-release/npm": "7.0.8",
+		"@semantic-release/release-notes-generator": "9.0.1",
+		"@storybook/addon-actions": "6.1.9",
+		"@storybook/addon-essentials": "6.1.9",
+		"@storybook/addon-links": "6.1.9",
+		"@storybook/addons": "6.1.9",
+		"@storybook/react": "6.1.9",
+		"@storybook/storybook-deployer": "2.8.7",
+		"@storybook/theming": "6.1.9",
+		"@testing-library/react": "11.2.2",
+		"@testing-library/react-hooks": "3.4.2",
+		"@types/chalk": "2.2.0",
+		"@types/jest": "26.0.15",
+		"@types/node": "14.14.10",
+		"@types/react": "17.0.0",
+		"@types/react-dom": "17.0.0",
+		"@types/shelljs": "0.8.8",
+		"@typescript-eslint/eslint-plugin": "4.8.2",
+		"@typescript-eslint/parser": "4.8.2",
+		"babel-loader": "8.2.2",
+		"babel-register": "6.26.0",
+		"chalk": "4.1.0",
+		"eslint": "7.14.0",
+		"eslint-config-prettier": "6.15.0",
+		"eslint-plugin-import": "2.22.1",
+		"husky": "4.3.0",
+		"jest": "26.6.3",
+		"lint-staged": "10.5.2",
+		"prettier": "2.2.1",
+		"react-test-renderer": "17.0.1",
+		"semantic-release": "17.3.0",
+		"shelljs": "0.8.4",
+		"ts-jest": "26.4.4",
+		"typescript": "4.1.2"
+	},
+	"dependencies": {
+		"react": "17.0.1",
+		"react-dom": "17.0.1"
+	},
+	"peerDependencies": {
+		"react": "17.0.1",
+		"react-dom": "17.0.1"
+	}
 }
