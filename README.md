@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="https://github.com/SugarDarius/react-use-algos">Welcome to React Use Algos</a>
+  <a href="https://github.com/SugarDarius/react-use-algos">Welcome to React Use Algos (unmaintained)</a>
 </h1>
 
 <p align="center">
